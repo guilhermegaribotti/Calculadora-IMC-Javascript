@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <script>
+        let altura = prompt("Digite sua altura:");
+        let peso = prompt("Digite seu peso:");
+
+        let imc = peso / altura ** 2;
+
+        alert("Sua IMC é: " + imc);
+
+        if (imc < 18.5) {
+            alert("Magreza");
+        }
+        else if (imc < 24.9) {
+            alert("Normal");
+        }
+        else if (imc < 29.9) {
+            alert("Sobrepeso");
+        }
+        else if (imc < 39.9) {
+            alert("Obesidade");
+        }
+        else {
+            alert("Obesidade Grave");
+        }
+
+        alert("* Para reiniciar o cálculo do IMC atualize a página");
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
