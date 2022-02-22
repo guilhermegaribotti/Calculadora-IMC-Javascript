@@ -8,27 +8,27 @@
     <title>Calculadora de IMC</title>
 
     <script>
-        let altura = prompt("Digite sua altura:");
-        let peso = prompt("Digite seu peso:");
+        let altura = prompt("Digite sua altura (Utilize ponto ' . ' para separar metros de centímetros): ");
+        let peso = prompt("Digite seu peso: ");
 
         let imc = peso / altura ** 2;
 
-        alert("Sua IMC é: " + imc);
+        alert("Seu IMC é: " + imc);
 
         if (imc < 18.5) {
-            alert("Magreza");
+            alert("Classificação: Magreza");
         }
         else if (imc < 24.9) {
-            alert("Normal");
+            alert("Classificação: Normal");
         }
         else if (imc < 29.9) {
-            alert("Sobrepeso");
+            alert("Classificação: Sobrepeso");
         }
         else if (imc < 39.9) {
-            alert("Obesidade");
+            alert("Classificação: Obesidade");
         }
         else {
-            alert("Obesidade Grave");
+            alert("Classificação: Obesidade Grave");
         }
 
         alert("* Para reiniciar o cálculo do IMC atualize a página");
